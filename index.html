@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Wedding Memories</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --background: #fffaf6;
-      --primary: #d291bc;
-      --accent: #957dad;
-      --text: #333;
+      --background: #f8f9fa;
+      --primary: #2c3e50;
+      --accent: #4b6584;
+      --text: #2f2f2f;
+      --button-bg: #2c3e50;
+      --button-hover: #1a242f;
     }
 
     * {
@@ -20,20 +22,21 @@
     }
 
     body {
-      font-family: 'Nunito', sans-serif;
-      background: var(--background);
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
       color: var(--text);
-      padding: 40px 20px;
+      padding: 50px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      min-height: 100vh;
     }
 
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      color: var(--accent);
+      font-family: 'Merriweather', serif;
+      font-size: 2.6rem;
+      color: var(--primary);
       margin-bottom: 1rem;
     }
 
@@ -41,24 +44,26 @@
       font-size: 1.1rem;
       max-width: 600px;
       margin-bottom: 2.5rem;
+      color: #444;
     }
 
     .button {
-      background-color: var(--primary);
+      display: inline-block;
+      background-color: var(--button-bg);
       color: white;
       padding: 12px 24px;
       border: none;
-      border-radius: 30px;
+      border-radius: 4px;
       font-size: 1rem;
       font-weight: 600;
       margin: 10px;
-      cursor: pointer;
       text-decoration: none;
+      cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: var(--accent);
+      background-color: var(--button-hover);
     }
 
     .footer {
@@ -73,7 +78,7 @@
       }
 
       .button {
-        width: 90%;
+        width: 100%;
         font-size: 1rem;
       }
 
